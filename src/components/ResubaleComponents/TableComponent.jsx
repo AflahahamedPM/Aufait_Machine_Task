@@ -108,7 +108,7 @@ const TableComponent = ({ tableData = [], columns = [] }) => {
           ) : (
             <TableRow>
               <TableCell colSpan={columns.length} className="text-center py-6">
-                No risks found
+                No datas found
               </TableCell>
             </TableRow>
           )}
