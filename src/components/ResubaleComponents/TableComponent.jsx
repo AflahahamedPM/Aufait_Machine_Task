@@ -126,7 +126,7 @@ const TableComponent = ({ tableData = [], columns = [] }) => {
           <button
             onClick={table.previousPage}
             disabled={!table.getCanPreviousPage()}
-            className="px-2 py-1 rounded border disabled:opacity-40"
+            className="px-2 py-1 rounded border disabled:opacity-40 cursor-pointer"
           >
             ‹
           </button>
@@ -143,7 +143,7 @@ const TableComponent = ({ tableData = [], columns = [] }) => {
               <button
                 key={i}
                 onClick={() => table.setPageIndex(i)}
-                className={`w-8 h-8 rounded-full border text-sm
+                className={`w-8 h-8 rounded-full border text-sm cursor-pointer
                   ${
                     isActive
                       ? "bg-primary text-white"
@@ -159,7 +159,7 @@ const TableComponent = ({ tableData = [], columns = [] }) => {
           <button
             onClick={table.nextPage}
             disabled={!table.getCanNextPage()}
-            className="px-2 py-1 rounded border disabled:opacity-40"
+            className="px-2 py-1 rounded border disabled:opacity-40 cursor-pointer"
           >
             ›
           </button>
